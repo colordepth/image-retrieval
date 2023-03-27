@@ -1,0 +1,21 @@
+{
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "name": "digital-art-viewer",
+  "version": "0.1.0",
+  "description": "Digital art viewing application with similar image lookup capabilities",
+  "repository": "git@github.com:colordepth/image-retrieval.git",
+  "author": "Deep Sharma <deepsharma.cs@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "dev-server": "yarn workspace server dev",
+    "dev-client": "yarn workspace client start",
+    "dev": "concurrently -k -p '{name}' -n 'server,client' -c 'bgBlue.bold,bgGreen.bold' 'yarn:dev-server' 'yarn:dev-client'"
+  },
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  }
+}

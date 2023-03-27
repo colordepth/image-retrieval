@@ -1,0 +1,22 @@
+.Home {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.Navbar {
+    min-height: 4rem;
+    background-color: wheat;
+}
+
+.Content {
+    padding: 2rem 1rem 0rem 6rem;
+}
+
+.ImageGrid {
+    margin-top: 1rem;
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fill, minmax(0,200px));
+    justify-content: flex-start;
+}

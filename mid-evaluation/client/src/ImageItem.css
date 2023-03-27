@@ -1,0 +1,18 @@
+.ImageItem {
+    /* transition: 0.3s ease-in-out; */
+    width: 20rem;
+    margin-bottom: 10px;
+}
+/* .ImageItem{ */
+    /* transition: 0.3s ease-in-out;
+    transform: translateY(-20px); */
+/* } */
+
+.ImageItem > img {
+    width: auto;
+    border-radius: var(--radius);
+}
+.ImageItem > img :hover {
+    outline-style: solid;
+    outline-color: black;
+}
