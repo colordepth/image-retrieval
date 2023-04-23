@@ -1,0 +1,21 @@
+Submission Details:
+
+
+  digital-art-platform has the code for the server and client at https://digitalart.deep.moe
+  All experiment notebooks are in the notebooks directory.
+
+
+How to  access?
+
+access hosted website at https://digitalart.deep.moe
+
+For self hosting:
+1. Download dataset and put into dataset/extended-clean folder.
+2. docker compose up -d
+3. python update.py
+4. ./fix-permissions.sh
+5. cd client
+6. yarn dev
+7. start a new terminal
+8. go run cmd/app/main.go
+9. visit the URL shown in step 6
